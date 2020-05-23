@@ -1,0 +1,27 @@
+.wins {
+  text-align: center;
+}
+.highscores td,
+.highscores th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.highscores {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+.highscores__title {
+  text-align: center;
+}
+.highscores tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.highscores th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(86, 87, 86);
+  color: white;
+}

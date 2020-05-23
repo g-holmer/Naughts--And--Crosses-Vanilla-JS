@@ -1,0 +1,43 @@
+.start-game {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 100px;
+}
+.cross-icon, .naught-icon {
+    text-align: center;
+    padding: 4px;
+    img {
+        max-height: 20px;
+        max-width: 20px;
+    }
+}
+.naught-icon{
+    margin-top: 10px;
+}
+.btn-start {
+    color: rgba(255, 255, 255, 0.849);
+    margin-top: 12px;
+}
+.scoreTable {
+    display: flex;
+    justify-content: space-between;
+}
+.player1 {
+    display: flex;
+}
+.p-1-wins {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+}
+.p-2-wins {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+}
+.error-msg {
+    display: none;
+    color: red;
+    text-align: center;
+}
