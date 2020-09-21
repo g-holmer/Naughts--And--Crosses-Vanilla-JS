@@ -24,3 +24,4 @@
     <script src="js/checkWinner.js"></script>
     <script src="js/dragElement.js"></script>
 <?php require_once('./php/footer.php'); ?>
+
