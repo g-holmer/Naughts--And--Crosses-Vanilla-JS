@@ -48,7 +48,7 @@ function checkInput(checkWin) {
   let playerX = document.getElementsByName("playerX");
   let playerO = document.getElementsByName("playerO");
 
-  if (inputSquares[0].value < winCond[0].value) {
+  if (parseInt(inputSquares[0].value) < parseInt(winCond[0].value)) {
     errorMsg.textContent = "Size can't be lower than the in row condition.";
     errorMsg.style.display = "block";
     return;
@@ -90,15 +90,23 @@ function createArray(inputSquares) {
 
   return boardTiles;
 }
+
 function drawScoreTable() {
   const player1 = document.getElementsByName("playerX");
   const player2 = document.getElementsByName("playerO");
   const scoreTable = document.querySelector(".scoreTable");
 
-  scoreTable.innerHTML = `<div class="player1">${player1[0].value}<br>
+  scoreTable.innerHTML = `<div class="player1">
+                            <div class="cross-icon">
+                            <img class="player1-src" src="./img/cross.svg" alt="" srcset="">
+                            </div>${player1[0].value}<br>
                                 <p class="p-1-wins">${scoreX}</p>
                                 </div>
-                                <div class="player2">${player2[0].value}<br>
+
+                                <div class="player2">
+                                <div class="naught-icon">
+                                <img class="player2-src" src="./img/naught.svg" alt="" srcset="">
+                                </div>${player2[0].value}<br>
                                 <p class="p-2-wins">${scoreO}</p>
                                 </div>`;
 }

@@ -1,13 +1,16 @@
 let scoreX = 0;
 let scoreO = 0;
+let win;
 function addScore(player, pScore1, pScore2) {
   if (player === "X") {
     scoreX += 1;
     pScore1.textContent = scoreX;
+    win = true;
   }
   if (player === "O") {
     scoreO += 1;
     pScore2.textContent = scoreO;
+    win = true;
   }
 }
 

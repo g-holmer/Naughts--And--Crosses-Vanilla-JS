@@ -255,12 +255,6 @@ button:hover {
           justify-content: space-between;
 }
 
-.player1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .p-1-wins {
   display: -webkit-box;
   display: -ms-flexbox;
